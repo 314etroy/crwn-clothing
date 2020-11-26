@@ -65,9 +65,11 @@ class App extends React.Component {
                 ...snapShot.data()
               }
             },
+            // Trebuie sa sterg functia asta 
             () => {
               console.log(this.state);
             }
+            // Trebuie sa sterg functia asta 
           );
         });
       }
