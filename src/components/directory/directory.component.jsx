@@ -5,6 +5,7 @@ import MenuItem from '../menu-item/menu-item.component';
 class Directory extends React.Component {
     constructor() {
         super();
+
         this.state = {
             sections: [{
                 title: 'hats',
@@ -41,22 +42,26 @@ class Directory extends React.Component {
                 id: 5,
                 linkUrl: 'mens'
             }]
-        }
+        };
     }
 
     render() {
         return (
             <div className='directory-menu'>
                 {/* Chestie inteligenta */}
+
+
                 {this.state.sections.map(({ id, ...otherSectionProps }) => (
                     <MenuItem key={id} {...otherSectionProps} />
                 ))}
+
+
                 {/* Declarare greoaie */}
                 {/* {this.state.sections.map(({ title, imageUrl, size, id, linkUrl }) => (
                     <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} linkUrl={linkUrl} />
                 ))} */}
             </div>
-        )
+        );
     }
 }
 

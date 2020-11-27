@@ -14,7 +14,7 @@ class SignUp extends React.Component {
             email: '',
             password: '',
             confirmPassword: ''
-        }
+        };
     }
 
     handleSubmit = async event => {
@@ -44,14 +44,14 @@ class SignUp extends React.Component {
     handleChange = event => {
         const { name, value } = event.target;
 
-        this.setState({[name]: value});
+        this.setState({ [name]: value });
     };
 
     render() {
         const { displayName, email, password, confirmPassword } = this.state;
         return (
             <div className='sign-up'>
-                <h2 className='title'>I do not have a account</h2>
+                <h2 className='title'>I do not have an account</h2>
                 <span>Sign up with your email and password</span>
                 <form className='sign-up-form' onSubmit={this.handleSubmit}>
                     <FormInput
@@ -87,10 +87,10 @@ class SignUp extends React.Component {
                         required
                     />
 
-                    <CustomButton type='submit'>Sign Up</CustomButton>
+                    <CustomButton type='submit'>SIGN UP</CustomButton>
                 </form>
             </div>
-        )
+        );
     }
 }
 
