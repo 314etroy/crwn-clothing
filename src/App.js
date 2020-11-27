@@ -9,7 +9,6 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 
-
 const HatsPage = (props) => (
   <div>
     {console.log(props)}
@@ -48,7 +47,6 @@ class App extends React.Component {
   componentDidMount() {
     const { setCurrentUser } = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-
 
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
