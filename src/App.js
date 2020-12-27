@@ -1,4 +1,5 @@
 import React from 'react';
+// import styled from 'styled-components';
 import Header from './components/header/header.compoment';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
