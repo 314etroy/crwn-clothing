@@ -1,0 +1,155 @@
+[33mcommit a84508bd4fbd10a85c1dde072e84f4dc9904cf39[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Sun Dec 27 17:25:33 2020 +0200
+
+    I implement CSX in Project
+
+[33mcommit 9a2427867f77d6709e93178fabbd69f1efa7e2b6[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Sun Dec 27 15:49:49 2020 +0200
+
+    I add CSX in Project
+
+[33mcommit ae891a9b6abf33d71f18f13e1501f989fbd7562b[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Thu Dec 24 06:18:29 2020 +0200
+
+    removing redux-logger prom production build
+
+[33mcommit 378bf33ef6dd72b4ceb65a1c9a9195834ca9f6a9[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: 314etroy <73442931+314etroy@users.noreply.github.com>
+Date:   Thu Dec 24 05:52:14 2020 +0200
+
+    Delete package-lock.json
+
+[33mcommit b0625a7084cc0f3811a38ac119cf201183196e86[m
+Author: 314etroy <73442931+314etroy@users.noreply.github.com>
+Date:   Thu Dec 24 05:50:54 2020 +0200
+
+    Delete yarn.lock
+
+[33mcommit 59729bd025f041eedb49243b6d3db6d3c2e8c3a1[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Thu Dec 24 05:11:40 2020 +0200
+
+    updating stripe integration and updating our favicon and title
+
+[33mcommit 427532eb337ad1afd78345f0f7cf56c9530f044b[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Tue Dec 1 00:25:03 2020 +0200
+
+    moved our directory and shop data into its own reducer, created respective selectors and updated corresponding components with new ux flow for directory/shop
+
+[33mcommit f989d5369949604b3144199eabf5cb427ce27f81[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Sat Nov 28 02:39:56 2020 +0200
+
+    added addItem and removeItem functionality to checkout item component
+
+[33mcommit e013e695d76261908c69efaae43d5605968daa60[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Sat Nov 28 01:52:05 2020 +0200
+
+    added checkout page, checkout item component and updated cart to use selectors
+
+[33mcommit d481087d74829ab38d4779753c74532abb4a0164[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Sat Nov 28 00:23:30 2020 +0200
+
+    updating our application with reselect, replaced cart selectors with memorized selectors
+
+[33mcommit f1e048a6324ce65df17523d99e81369d759a3c0a[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Fri Nov 27 21:25:31 2020 +0200
+
+    created cart-item component and connected our cart dropdown with cartItems reducer
+
+[33mcommit 2be67806b99a3f8b5b489ab14d8de5cb8c73b1a5[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Fri Nov 27 19:56:22 2020 +0200
+
+    updated shop data with new data, updated cart utils to group items in cart reducer
+
+[33mcommit 43367e91521eeda93ac8122ff8198c03ab7821c0[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Fri Nov 27 16:33:59 2020 +0200
+
+    added cartIcon and cartDropdown components to our application, also implemented cart reducer
+
+[33mcommit 1a512b18971f0785c3b3764206bf26cf0fbcdd4e[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Fri Nov 27 15:35:00 2020 +0200
+
+    I fix the bug from Sign In / Sign Out button from header
+
+[33mcommit 8bf7f8d9ccf61b87cbcf3919ed3a0cc611e4135a[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Fri Nov 27 12:47:15 2020 +0200
+
+    updating our app to redirect to home if user is signed in
+
+[33mcommit e504e8e2c7cb0d7ac0d1f82a671d9c8f8e175d76[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Fri Nov 27 12:36:31 2020 +0200
+
+    added redux and implemented userReducer and userActions to header and app Components
+
+[33mcommit a47723feaa3bbe8f0ac7ce133a13ca88502d6c80[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Fri Nov 27 00:28:39 2020 +0200
+
+    finishing sign in handleSubmit method
+
+[33mcommit 418493bbd66300a4be8421c31bc8491715fe98a3[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Fri Nov 27 00:17:37 2020 +0200
+
+    implemented firebase utils, included ability to store authenticated users into our firestore database
+
+[33mcommit f87feca055aafe50070a4e9af33727fef9fb89ed[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Thu Nov 19 11:41:11 2020 +0200
+
+    integrated firebase into application, created sign in page with sign in component and sign in with google
+
+[33mcommit c6a0d77853b8a6c5df83fb919c3fdf41cf028bda[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Thu Nov 19 00:35:18 2020 +0200
+
+    I add the Sign In button
+
+[33mcommit 1ebfb49cf00199bc8dc2e11d702029a5ab3195f7[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Wed Nov 18 23:34:00 2020 +0200
+
+    adding header component and links to home, shop page and contact
+
+[33mcommit 0b357be8ee14b03168a485c797d42e33a6a09a95[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Wed Nov 18 23:05:24 2020 +0200
+
+    updating our app with a shop page, collection preview component and collection item component
+
+[33mcommit 3f706ba4977fc9c74107269f28013775cab9a435[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Wed Nov 18 06:53:43 2020 +0200
+
+    update our menu-items to navigate withRouter HOC
+
+[33mcommit 9c3d929520580ea87b1c448a5b674a7f6721a017[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Sat Nov 14 02:12:02 2020 +0200
+
+    broken our homepage into smaller components, finished styling our menu-item component
+
+[33mcommit 28db80fc7cad2bc0730694ea985969606ef77abb[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Fri Nov 13 18:33:11 2020 +0200
+
+    created project with create react app and added files for homepage
+
+[33mcommit dd45e34b2dbae2fa0e6e6c6b5bdca14029ea3984[m
+Author: 314etroy <gtx7703d@gmail,com>
+Date:   Fri Nov 13 17:29:40 2020 +0200
+
+    Initialize project using Create React App
