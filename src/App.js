@@ -1,5 +1,4 @@
-import React from 'react';
-// import styled from 'styled-components';
+import React, { useEffect } from 'react';
 import Header from './components/header/header.compoment';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
@@ -45,37 +44,27 @@ const MensPage = () => (
   </div>
 );
 
-class App extends React.Component {
-
-  unsubscribeFromAuth = null;
-
-  componentDidMount() {
-    const { checkUserSession } = this.props;
+const App = ({ checkUserSession, currentUser }) => {
+  useEffect(() => {
     checkUserSession();
-  }
+  }, [checkUserSession]);
 
-  componentWillUnmount() {
-    this.unsubscribeFromAuth();
-  }
-
-  render() {
-    return (
-      <div >
-        <Header />
-        <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route path='/shop' component={ShopPage} />
-          <Route exact path='/checkout' component={CheckoutPage} />
-          <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<SignInAndSignUpPage />)} />
-          <Route path='/hats' component={HatsPage} />
-          <Route path='/jackets' component={JacketsPage} />
-          <Route path='/sneakers' component={SneakersPage} />
-          <Route path='/womens' component={WomensPage} />
-          <Route path='/mens' component={MensPage} />
-        </Switch >
-      </div>
-    );
-  }
+  return (
+    <div >
+      <Header />
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/shop' component={ShopPage} />
+        <Route exact path='/checkout' component={CheckoutPage} />
+        <Route exact path='/signin' render={() => currentUser ? (<Redirect to='/' />) : (<SignInAndSignUpPage />)} />
+        <Route path='/hats' component={HatsPage} />
+        <Route path='/jackets' component={JacketsPage} />
+        <Route path='/sneakers' component={SneakersPage} />
+        <Route path='/womens' component={WomensPage} />
+        <Route path='/mens' component={MensPage} />
+      </Switch >
+    </div>
+  );
 }
 
 const mapStateToProps = createStructuredSelector({
@@ -90,3 +79,5 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(App);
+
+// import styled from 'styled-components';
